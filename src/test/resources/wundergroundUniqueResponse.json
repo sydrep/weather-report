@@ -1,0 +1,94 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Sydney, New South Wales",
+		"city":"Sydney",
+		"state":"NW",
+		"state_name":"New South Wales",
+		"country":"AU",
+		"country_iso3166":"AU",
+		"zip":"00000",
+		"magic":"1",
+		"wmo":"94767",
+		"latitude":"-33.95000076",
+		"longitude":"151.17999268",
+		"elevation":"3.00000000"
+		},
+		"observation_location": {
+		"full":"Sydney, ",
+		"city":"Sydney",
+		"state":"",
+		"country":"AU",
+		"country_iso3166":"AU",
+		"latitude":"-33.94649887",
+		"longitude":"151.17309570",
+		"elevation":"20 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"YSSY",
+		"observation_time":"Last Updated on November 5, 2:00 PM AEDT",
+		"observation_time_rfc822":"Thu, 05 Nov 2015 14:00:00 +1100",
+		"observation_epoch":"1446692400",
+		"local_time_rfc822":"Thu, 05 Nov 2015 14:25:05 +1100",
+		"local_epoch":"1446693905",
+		"local_tz_short":"AEDT",
+		"local_tz_long":"Australia/Sydney",
+		"local_tz_offset":"+1100",
+		"weather":"Mostly Cloudy",
+		"temperature_string":"72 F (22 C)",
+		"temp_f":72,
+		"temp_c":22,
+		"relative_humidity":"73%",
+		"wind_string":"From the NNE at 24 MPH Gusting to 37 MPH",
+		"wind_dir":"NNE",
+		"wind_degrees":30,
+		"wind_mph":24,
+		"wind_gust_mph":"37",
+		"wind_kph":39,
+		"wind_gust_kph":"59",
+		"pressure_mb":"1011",
+		"pressure_in":"29.86",
+		"pressure_trend":"0",
+		"dewpoint_string":"63 F (17 C)",
+		"dewpoint_f":63,
+		"dewpoint_c":17,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"NA",
+		"windchill_f":"NA",
+		"windchill_c":"NA",
+		"feelslike_string":"72 F (22 C)",
+		"feelslike_f":"72",
+		"feelslike_c":"22",
+		"visibility_mi":"6.2",
+		"visibility_km":"10.0",
+		"solarradiation":"--",
+		"UV":"6","precip_1hr_string":"-9999.00 in (-9999.00 mm)",
+		"precip_1hr_in":"-9999.00",
+		"precip_1hr_metric":"--",
+		"precip_today_string":"0.00 in (0.0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0.0",
+		"icon":"mostlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+		"forecast_url":"http://www.wunderground.com/global/stations/94767.html",
+		"history_url":"http://www.wunderground.com/history/airport/YSSY/2015/11/5/DailyHistory.html",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=-33.94649887,151.17309570",
+		"nowcast":""
+	}
+}
