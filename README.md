@@ -24,4 +24,4 @@ When a user selects a city from the dropdown list, the City object will be passe
 - wunderground.properties - contains data for Wunderground API. 
 
 ##Build
-A Maven build is provided.  Use Maven **install** to run the unit and Selenium tests.
+A Maven pom.xml is provided for the build.  Use Maven **verify** to run the unit and Selenium tests.
