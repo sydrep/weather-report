@@ -13,7 +13,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.syd.weathermodels.Cities;
 import com.syd.weathermodels.City;
-import com.syd.weathermodels.Output;
 import com.syd.weathermodels.Weather;
 import com.syd.weathermodels.WeatherCondition;
 

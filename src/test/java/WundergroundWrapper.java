@@ -4,7 +4,6 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import com.syd.weathermodels.Output;
 import com.syd.weathermodels.Wunderground;
 
 // This wrapper by pass URL connection to wunderground.com and
