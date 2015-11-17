@@ -19,7 +19,6 @@ import org.openqa.selenium.support.ui.Select;
 public class WeatherSeleniumTest {
 	  private WebDriver driver;
 	  private String baseUrl;
-	  private boolean acceptNextAlert = true;
 	  private StringBuffer verificationErrors = new StringBuffer();
 
 	  @Before
@@ -36,20 +35,17 @@ public class WeatherSeleniumTest {
 		String LOC1 = "Sydney";
 		String LOC2 = "Melbourne";
 		String LOC3 = "Wollongong";
+		String CITY_NAME = "cityName";
 		  
 	    driver.get(baseUrl + "weather");
-	    new Select(driver.findElement(By.id("cityName"))).selectByVisibleText(LOC1);
-	    // Warning: assertTextPresent may require manual changes
-	    assertTrue(driver.findElement(By.cssSelector("body")).getText().matches("^[\\s\\S]*" + WEATHER + LOC1 + "[\\s\\S]*$"));
-	    new Select(driver.findElement(By.id("cityName"))).selectByVisibleText(LOC2);
-	    // Warning: assertTextPresent may require manual changes
-	    assertTrue(driver.findElement(By.cssSelector("BODY")).getText().matches("^[\\s\\S]*" + WEATHER + LOC2 + "[\\s\\S]*$"));
-	    new Select(driver.findElement(By.id("cityName"))).selectByVisibleText(LOC3);
-	    // Warning: assertTextPresent may require manual changes
-	    assertTrue(driver.findElement(By.cssSelector("BODY")).getText().matches("^[\\s\\S]*" + WEATHER + LOC3 + "[\\s\\S]*$"));
-	    new Select(driver.findElement(By.id("cityName"))).selectByVisibleText("");
-	    // Warning: assertTextPresent may require manual changes
-	    assertTrue(driver.findElement(By.cssSelector("BODY")).getText().matches("^[\\s\\S]*" + HINT + "[\\s\\S]*$"));
+	    new Select(driver.findElement(By.id(CITY_NAME))).selectByVisibleText(LOC1);
+	    assertTrue(driver.getPageSource().contains(WEATHER + LOC1));
+	    new Select(driver.findElement(By.id(CITY_NAME))).selectByVisibleText(LOC2);
+	    assertTrue(driver.getPageSource().contains(WEATHER + LOC2));
+	    new Select(driver.findElement(By.id(CITY_NAME))).selectByVisibleText(LOC3);
+	    assertTrue(driver.getPageSource().contains(WEATHER + LOC3));
+	    new Select(driver.findElement(By.id(CITY_NAME))).selectByVisibleText("");
+	    assertTrue(driver.getPageSource().contains(HINT));
 	  }
 
 	  @After
