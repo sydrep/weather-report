@@ -119,7 +119,7 @@
 				<configuration>
 					<excludes>
 						<!-- Exclude integration tests within (unit) test phase. -->
-						<exclude>**/WeatherSeleniumTest.java</exclude>
+						<exclude>**/WeatherSeleniumIT.java</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
@@ -134,7 +134,7 @@
 				<version>2.19</version>
 				<configuration>
 					<includes>
-						<include>**/WeatherSeleniumTest.java</include>
+						<include>**/WeatherSeleniumIT.java</include>
 					</includes>
 				</configuration>
 				<executions>

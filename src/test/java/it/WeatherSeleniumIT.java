@@ -1,3 +1,5 @@
+package it;
+
 import static org.junit.Assert.*;
 
 import org.junit.After;
@@ -16,7 +18,7 @@ import org.openqa.selenium.support.ui.Select;
 
 
 
-public class WeatherSeleniumTest {
+public class WeatherSeleniumIT {
 	  private WebDriver driver;
 	  private String baseUrl;
 	  private StringBuffer verificationErrors = new StringBuffer();
