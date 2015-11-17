@@ -3,6 +3,8 @@ package com.syd.weathermodels;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Iterator;
 
 import org.apache.commons.lang3.StringEscapeUtils;
@@ -22,7 +24,7 @@ public class Wunderground {
 												// use this to get weather data
 	private final static String CURRENT_OBSERVATION = "current_observation";
 	private final static String RESULTS = "results";
-	private final static String OBSERVATION_TIME_RFC822 = "observation_time_rfc822";
+	private final static String OBSERVATION_EPOCH = "observation_epoch";
 	private final static String WEATHER = "weather";
 	private final static String TEMP = "temp_c";
 	private final static String WIND_KPH = "wind_kph";
@@ -57,8 +59,10 @@ public class Wunderground {
 
 	private void setWeatherInfo(String attribute, String value) {
 		switch (attribute) {
-		case OBSERVATION_TIME_RFC822:
-			weather.setUpdatedTime(value);
+		case OBSERVATION_EPOCH:
+			Date date = new Date(Long.parseLong(value)*1000);	//
+			SimpleDateFormat sdf = new SimpleDateFormat("EEEE HH:mm a"); 
+			weather.setUpdatedTime(sdf.format(date));
 			break;
 		case WEATHER:
 			weather.setWeather(value);
