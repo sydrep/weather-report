@@ -9,7 +9,7 @@ This web project allows a user to select 3 Australian cities: Sydney, Melbourne 
 - Weather.java - this class stores all the weather data that will be displayed to the browser, including City,
 Updated time, Weather, Temperature, and Wind
 
--  Cities.java - contains a list of cities that is passed to the dropdown list as select options.  The actual list of cities is stored in '/src/main/resources/property/cities.properties' file which can grow or shrink without having to modify java code.
+-  Cities.java - contains a list of cities that is passed to the dropdown list as select options.  The actual list of cities is stored in `/src/main/resources/property/cities.properties` file which can grow or shrink without having to modify java code.
 
 - City.java - stores the city name from the user selected option of the dropdown list and the City object is passed to the controller
 
