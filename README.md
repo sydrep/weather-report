@@ -13,7 +13,7 @@ Updated time, Weather, Temperature, and Wind
 
 - City.java - stores the city name from the user selected option of the dropdown list and the City object is passed to the controller
 
-- WeatherController.java - handles request mapped to "weather", e.g. for local host testing http://localhost:8080/weather/weather
+- WeatherController.java - handles request mapped to "weather", e.g. for local host testing *http://localhost:8080/weather/weather*
 
 When a user selects a city from the dropdown list, the City object will be passed to this controller which calls WeatherCondition.getWeather() to return the Weather object that contains the weather information.  The Weather object is passed to the weather.jsp which is then displayed to the user.
 
@@ -22,4 +22,4 @@ When a user selects a city from the dropdown list, the City object will be passe
 - Wunderground.java - a weather API. 
 
 ##Build
-Use Maven build.
+A Maven build is provided.  Use Maven **install** to run the unit and Selenium tests.
